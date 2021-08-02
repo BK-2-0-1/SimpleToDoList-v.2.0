@@ -14,6 +14,9 @@ app.listen(port, () => {
 // ejs
 app.set('view engine', 'ejs');
 
+// heroku
+app.listen(process.env.PORT);
+
 // ▼▼▼▼ body-parser ▼▼▼▼, теперь его не нужно импортировать отдельно, достаточно написать такой код:
 app.use(express.urlencoded({
   extended: true
