@@ -47,15 +47,15 @@ const itemSchema = new mongoose.Schema({
 const Item = mongoose.model('Item', itemSchema);
 
 const item1 = new Item({
-  name: 'Welcome! This is ToDoList.'
+  name: 'Добро пожаловать! Это простой список дел.'
 });
 
 const item2 = new Item({
-  name: 'Click the + button to add a new item'
+  name: 'Нажмите + для создания нового дела.'
 });
 
 const item3 = new Item({
-  name: '<- Click here to delete an item.'
+  name: '<= Нажмите сюда чтобы удалить дело.'
 });
 
 const defaultItems = [item1, item2, item3];
